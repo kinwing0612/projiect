@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Kinwing Liang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quicksand', sans-serif; margin: 0; background-color: #f1f5f8; color: #05386b; line-height: 1.8; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 40px; }
+        a { color: #5cdb95; text-decoration: none; font-weight: 700; transition: 0.3s; }
+        a:hover { opacity: 0.7; }
+
+        nav { padding: 40px 0; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: #05386b; }
+        .nav-links { display: flex; gap: 10px; }
+        .nav-links a { color: #05386b; padding: 10px 22px; border-radius: 30px; }
+        .nav-links a.active { background-color: #5cdb95; color: white !important; }
+
+        .hero-intro { padding: 60px 0; font-size: 1.5rem; font-weight: 400; }
+        .hero-intro h2 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 30px; }
+        .avatar-container { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin-bottom: 30px; border: 4px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .avatar-container img { width: 100%; height: 100%; object-fit: cover; }
+
+        .experience-section { margin: 60px 0; }
+        .exp-row { display: flex; justify-content: space-between; padding: 20px 0; border-top: 1px solid #e2e8f0; align-items: center; }
+        .exp-row:last-child { border-bottom: 1px solid #e2e8f0; }
+        .exp-info h4 { margin: 0; font-size: 1.2rem; }
+        .exp-info p { margin: 0; color: #7f8c8d; font-size: 1rem; }
+        .exp-date { font-weight: 700; color: #05386b; }
+
+        .principles-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 80px 0; }
+        .principle-card h3 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: #7f8c8d; margin-bottom: 10px; }
+        .principle-card h4 { font-size: 1.8rem; margin: 0 0 15px 0; color: #05386b; }
+
+        .story-section { background: white; padding: 80px; border-radius: 40px; margin: 60px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+        .story-section p { font-size: 1.2rem; margin-bottom: 25px; }
+
+        footer { margin-top: 100px; padding: 80px 0; border-top: 1px solid #e2e8f0; display: flex; justify-content: space-between; }
+        .footer-right { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 60px; }
+        .footer-column h4 { margin-bottom: 20px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-column a { display: block; color: #7f8c8d; margin-bottom: 10px; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .principles-grid, footer, .exp-row { flex-direction: column; grid-template-columns: 1fr; }
+            .footer-right { grid-template-columns: 1fr; margin-top: 40px; }
+            .story-section { padding: 40px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">Kinwing Liang.</a>
+            <div class="nav-links">
+                <a href="work.html">Work</a>
+                <a href="index.html" class="active">About</a>
+                <a href="play.html">Play</a>
+                <a href="note.html">Notes</a>
+            </div>
+        </nav>
+
+        <section class="hero-intro">
+            <div class="avatar-container">
+                <img src="assets/images/2222.jpg" alt="Kinwing Liang">
+            </div>
+            <h2>I'm Kinwing Liang<br>I'm a Networking Student at St. Clair College, Windsor.</h2>
+            <p>Over the past year, I've dived into the core of digital infrastructure—from Cisco networking protocols and Object-Oriented Programming (OOP) in Java to Linux server administration and JavaScript. I want to be a continuous learner in computer software field.</p>
+        </section>
+
+        <section class="experience-section">
+            <div class="exp-row">
+                <div class="exp-info"><h4>St. Clair College</h4><p>Networking (T860) | GPA: 3.5</p></div>
+                <div class="exp-date">2025.9 - right now</div>
+            </div>
+            <div class="exp-row">
+                <div class="exp-info"><h4>Freelance</h4><p>IT Infrastructure Consultant</p></div>
+                <div class="exp-date">2025.12</div>
+            </div>
+            <div class="exp-row">
+                <div class="exp-info"><h4>Campus Volunteer</h4><p>Bilingual Logistics Coordinator</p></div>
+                <div class="exp-date">2026.2</div>
+            </div>
+        </section>
+
+        <section style="margin: 80px 0;">
+            <p style="font-size: 1.5rem; max-width: 700px;">
+                Let's collaborate if you're committed to <strong>Sustainability</strong>, <strong>Network Security</strong>, or <strong>Open Source</strong>. I believe we should build systems that are as resilient as they are efficient.
+            </p>
+        </section>
+
+        <section class="principles-grid">
+            <div class="principle-card">
+                <h3>01</h3><h4>Build it</h4>
+                <p>I build virtual labs and test topologies. Talking through a functioning ping is worth its weight. Tools only carry you so far; the rest is realizing a good connection.</p>
+            </div>
+            <div class="principle-card">
+                <h3>02</h3><h4>Collaborate</h4>
+                <p>Good infrastructure is not created in isolation; it must be facilitated through teamwork. I aim to include my peers in the debugging process and welcome feedback—strong connections benefit everyone.</p>
+            </div>
+            <div class="principle-card">
+                <h3>03</h3><h4>Security FTW</h4>
+                <p>I aim to make everything I design secure for one reason, it's the right thing to do and everyone benefits from it.</p>
+            </div>
+            <div class="principle-card">
+                <h3>04</h3><h4>Experiment</h4>
+                <p>Everything I configure is subject to iteration. Even if a script fails, it provides a valuable opportunity to debug and learn from mistakes.</p>
+            </div>
+        </section>
+
+        <section class="story-section">
+            <p>Before I stepped into the world of Networking, I was fascinated by the CLI. One of my earliest challenges involved managing permissions in Linux before I knew about <code>sudo</code>. Lots of wishing and hoping that my commands wouldn't break the system.</p>
+            <p>Debugging those early mistakes forced me to understand how protocols and hardware play together. My side project work is just an excuse to satisfy my curiosity about new technologies like AI </p>
+            <p>Outside work, I enjoy it  <strong>skateboarding</strong> near the river, playing <strong>League of Legends</strong>, and exploring <strong>hockey history</strong>. If you feel the same, I'd love to talk with you.</p>
+        </section>
+
+        <footer>
+            <div class="footer-left"><p>© 2026 Kinwing Liang</p></div>
+            <div class="footer-right">
+                <div class="footer-column"><h4>Colophon</h4><a href="index.html">About</a><a href="work.html">Work</a><a href="play.html">Play</a><a href="note.html">Notes</a></div>
+                <div class="footer-column"><h4>Elsewhere</h4><a href="https://github.com/kinwing0612" target="_blank">Github：about my work and projects at all</a><a href="note.html">Posts</a><a href="assets/docs/resume.pdf" target="_blank">CV</a><a href="https://linkedin.com/in/kinwing-liang-6101763b8" target="_blank">LinkedIn</a></div>
+               
+            </div>
+        </footer>
+     <section class="story-section" style="margin-top: 40px; text-align: center;">
+    <h2>Get in Touch</h2>
+    <p>I am always open to discussing networking architecture or potential collaborations.</p>
+    
+    <a href="mailto:w0875134@stclaircollege.ca" style="font-size: 1.5rem; background-color: #5cdb95; color: #05386b; padding: 15px 30px; border-radius: 40px; display: inline-block; margin-top: 20px;">
+        w0875134@stclaircollege.ca
+    </a>
+</section>
+     
+     
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play | Kinwing Liang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+       
+        body { font-family: 'Quicksand', sans-serif; margin: 0; background-color: #f1f5f8; color: #05386b; line-height: 1.6; }
+        .container { max-width: 940px; margin: 0 auto; padding: 0 40px; }
+        
+        nav { padding: 40px 0; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: #05386b; text-decoration: none; }
+        .nav-links { display: flex; gap: 10px; align-items: center; }
+        .nav-links a { 
+            color: #05386b; 
+            text-decoration: none; 
+            font-weight: 700; 
+            padding: 10px 22px; 
+            border-radius: 30px; 
+            transition: 0.3s;
+        }
+        .nav-links a:hover { color: #5cdb95; }
+        .nav-links a.active { 
+            background-color: #5cdb95; 
+            color: white !important; 
+        }
+
+        .play-header { padding: 60px 0 40px; }
+        .play-header h1 { font-size: 3.5rem; margin: 0; letter-spacing: -2px; }
+        .play-header p { font-size: 1.3rem; opacity: 0.7; max-width: 600px; margin-top: 15px; }
+
+        .play-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding-bottom: 50px; }
+        .play-item { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 40px; 
+            transition: 0.3s; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+        .play-item:hover { transform: translateY(-10px); border-color: #5cdb95; }
+        .play-item h2 { margin: 15px 0 10px 0; font-size: 1.8rem; color: #5cdb95; }
+        .play-item p { margin: 0; font-size: 1.1rem; color: #7f8c8d; }
+        .emoji { font-size: 3rem; }
+        
+        .status-tag { 
+            align-self: flex-start;
+            background: #f1f1f1; 
+            color: #999; 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            font-size: 0.75rem; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 80px 0;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer-left { color: #7f8c8d; font-weight: 700; font-size: 1.1rem; }
+        .footer-right { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 80px; }
+        .footer-column h4 { margin: 0 0 20px 0; color: #05386b; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-column a { 
+            display: block; 
+            color: #7f8c8d; 
+            text-decoration: none; 
+            margin-bottom: 12px; 
+            transition: 0.3s;
+            font-weight: 600;
+        }
+        .footer-column a:hover { color: #5cdb95; }
+
+        @media (max-width: 768px) {
+            nav, footer { flex-direction: column; text-align: center; gap: 40px; }
+            .footer-right { grid-template-columns: 1fr; gap: 30px; }
+            .play-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">Kinwing Liang.</a>
+            <div class="nav-links">
+                <a href="work.html">Work</a>
+                <a href="index.html">About</a>
+                <a href="play.html" class="active">Play</a> <a href="note.html">Notes</a>
+            </div>
+        </nav>
+
+        <header class="play-header">
+            <h1>Play.</h1>
+            <p>A collection of tools, hobbies, and experimental labs designed to be helpful, and this is a simple description.</p>
+        </header>
+
+        <section class="play-grid">
+            <div class="play-item">
+                <div class="emoji">🛹</div>
+                <h2>Skateboard</h2>
+                <p>break down the action of the video - specifically for those nasty ollies.</p>
+            </div>
+
+            <div class="play-item">
+                <div class="emoji">🎮</div>
+                <h2>LoL mingchao</h2>
+                <p>Chat,rage about your jungler with group number in a shared dashboard.</p>
+            </div>
+
+            <div class="play-item">
+                <div class="emoji">🏒</div>
+                <h2>Puck Timeline</h2>
+                <p>Instantly spec out NHL history so your friends can have no excuses during sports trivia.</p>
+            </div>
+
+            <div class="play-item">
+                <div class="emoji">🏋️‍♂️</div>
+                <h2>Macro Master</h2>
+                <p>A simple tracker for 1.80m tall techies. Balancing calories and packets while aiming for that 85kg goal.this is so hard</p>
+            </div>
+
+            <div class="play-item">
+                <div class="status-tag">Soon</div>
+                <div class="emoji">🤖</div>
+                <h2>AI Lab Helper</h2>
+                <p>Create networking emojis that-shouldn't be to torment my IT classmates, exploring generative AI to create custom technical visual aids for networking concepts.</p>
+            </div>
+
+            <div class="play-item">
+                <div class="emoji">📊</div>
+                <h2>Transfer Status</h2>
+                <p>Let folks know what's up with my university transfer (windsor)</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-left">
+                <p>© 2026 Kinwing Liang</p>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h4>Colophon</h4>
+                    <a href="index.html">About</a>
+                    <a href="work.html">Work</a>
+                    <a href="play.html">Play</a>
+                    <a href="note.html">Notes</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Elsewhere</h4>
+                    <a href="https://github.com/kinwing0612" target="_blank">Github: All my work and projects</a>
+                    <a href="note.html">Posts</a>
+                    <a href="assets/docs/resume.pdf" target="_blank">CV (Resume)</a>
+                    <a href="https://www.linkedin.com/in/kinwing-liang-6101763b8" target="_blank">LinkedIn</a>
+                </div>
+
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
